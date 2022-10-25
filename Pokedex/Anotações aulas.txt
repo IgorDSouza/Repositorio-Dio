@@ -1,0 +1,47 @@
+'CRIANDO UM PROJETO COM HTML/CSS PARA LISTAGEM POKEMON'
+	CSS normalize = cria um padrão de estilo para todos os navegadores pois alguns vem com margens, paddings e etc o que pode diferenciar muito de um navegador para outro
+	.
+	
+	Phones First = Metodo consiste em desenvolver o site para mobiles primeiro e depois para telas maiores pois terão menos modificações.
+	
+	rem = Unidade de medida relacionada com a fonte padrão.
+	
+	API = Servidor que serve dados diversos para requisição e utilização nos sites
+	
+	
+REQUISIÇÃO HTTP
+	URL: https://pokeapi.co/api/v2/pokemon/
+		${IP}/${path = caminho de identificação do recursos}
+	
+	Request Method: GET(buscar dados do servidor) | POST(enviar dados para o servidor) | PUT(atualizar dados do servidor) | DELETE(deletar dados do servidor)
+	
+	Query String : Filtro passado pela requisição com uma estrutura chave e valor (? chave=valor) usando & para adicionar mais argumentos
+	ex = https://pokeapi.co/api/v2/pokemon/ (query String = )?type:grass&name=i
+	
+	HEADERS = Meta dados da nossa requisição usados para explicar ou complementar ela.
+	
+	REQUEST HEADERS = Configurações da requisição 
+	ex 
+	accept-language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7
+	
+	Essa é uma das configurações passadas pelo navegador para o servidor(api). Ela deixa claro as linguagens que poderão ser aceitas pelo navegador para que ele exiba para o usuario. Elas estão em ordem de prioridade ( a prioridade é pt-br, se não houver dados nessa lingua, mande o portugues de portugal, se não houver, proximo, e assim por diante.
+	
+	RESPONSE HEADERS = Configurações do envio do servidor
+	ex 
+	content-type: text/javascript;charset=UTF-8
+	
+	Nas configurações de requisição, o navegador deixa claro que aceita diversos tipos de conteudo. O servidor percebendo isto, envia o conteudo  e deixa explicito na RESPONSE da HEADER que enviou dados em texto/javascript.
+	
+	BODY = Dependendo do tipo da requisição, temos o BODY que contem as informações dos dados requeridos ou recebidos do servidor
+	
+	STATUS CODE = Situação atual da requisição, se deu erro, se foi um sucesso, se houve um problema por parte do servidor ou por parte do usuario.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap');
+*{
+font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 225, 225);
+}
+.content{
+    padding: 1rem; 
+    background-color: rgb(236, 225, 225);
+    height: 100vh;
+    width: 100vw;
+}
+.content h1{
+    margin:0;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width : 992px) {
+    .content{
+        max-width: 992px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
