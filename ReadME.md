@@ -1,5 +1,4 @@
-# Entrega de Projeto DIO 
+# Repositório aulas bootcamp Orange TECH da DIO
 
-## Introdução ao git e github!
 
 
