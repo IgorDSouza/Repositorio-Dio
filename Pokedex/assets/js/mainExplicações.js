@@ -29,5 +29,20 @@ fetch(url)
 })
 
 
+pokeapi.getPokemons().then((pokemons = []) => {
+    // Recebendo os dados da api e transformandos em 'uma lista com .map no lugar do 'for'.
 
+    //transforma esses dados da lista em uma lista de 'li's html
+
+   // Transformando a nova lista em uma unica string com o join('divisao')
+
+pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
+
+
+
+// for(let i=0; i < pokemonList.length ; i++){
+//     const pokemon = pokemonList[i];
+//     pokemonOl.innerHTML+=(convertPokemonToLi(pokemon));
+
+// }
 

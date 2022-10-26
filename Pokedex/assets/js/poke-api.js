@@ -1,5 +1,4 @@
-const offset=0;
-const limit =0;
+
 
 const pokeapi = {};
 
