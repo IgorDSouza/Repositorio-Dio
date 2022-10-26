@@ -1,31 +1,38 @@
-const offset=0;
-const limit = 10;
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
+
 const pokemonOl = document.getElementById('pokemonList');
 
+
 function convertPokemonToLi(pokemon){
-    return `<li class="pokemon">
-                    <span class="number">#001</span>
+    return `<li class="pokemon ${pokemon.type}" >
+                    <span class="number">#${pokemon.number}</span>
                     <span class="name">${pokemon.name}</span>
                     <div class="detail">
                         <ol class="types">
-                            <li class="type">grass</li>
-                            <li class="type">poison</li>
-    
+                            ${pokemon.types.map((type)=> `<li class="type  ${type}" > ${type} </li>`).join('')} 
                         </ol>
     
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="${pokemon.name}">
+                    <img src="${pokemon.photo}" alt="${pokemon.name}">
                     </div>
     </li>`
     }
     
-pokeapi.getPokemons().then((pokemonList) => {
 
-    for(let i=0; i < pokemonList.length ; i++){
-        const pokemon = pokemonList[i];
-        pokemonOl.innerHTML+=(convertPokemonToLi(pokemon));
+    pokeapi.getPokemons().then((pokemons = []) => {
+         // Recebendo os dados da api e transformandos em 'uma lista com .map no lugar do 'for'.
 
-    }
+         //transforma esses dados da lista em uma lista de 'li's html
+
+        // Transformando a nova lista em uma unica string com o join('divisao')
+
+   pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
+
+    
+    
+    // for(let i=0; i < pokemonList.length ; i++){
+    //     const pokemon = pokemonList[i];
+    //     pokemonOl.innerHTML+=(convertPokemonToLi(pokemon));
+
+    // }
 })
 
 

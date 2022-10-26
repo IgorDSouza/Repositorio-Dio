@@ -28,3 +28,6 @@ fetch(url)
     console.log('Requisição concluida')
 })
 
+
+
+
