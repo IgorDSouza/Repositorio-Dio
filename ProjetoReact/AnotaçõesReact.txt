@@ -1,0 +1,30 @@
+COMPONENTES E PROPS------------------------------------
+
+Os elementos React são construidos a partir de componentes, tudo dentro dele são componentese neles podem ser passsados propriedades.
+
+Padrão de criação de componentes entramos na 'src' e criamos uma pasta 'components' e adicionamos tudo la dentro.
+
+rfc cria a estrutura de componentes(precisa da extensão).
+
+os componentes podem apenas retornar uma unica tag "html"  ( no caso jsx),com outras tags dentro.
+ex:
+	pode = <div><h1></h1> <p></p> </div>
+	
+	não pode = <div> <h1></h1> </div> 
+				<div> <p></p> </div>
+				
+  para que posssamos passar mais tags uma ao lado da outra
+  usamos uma tag fantasma <> </>  e colocamos o conteudo dentro delas, ela não é reconhecida pelo html e não atrapalha a parte semantica do arquivo.
+  
+  
+CRIANDO NAVEGAÇÕES--------------------------------------
+Instalar react-router-dom para criar navegações entre componentes
+
+STYLED-COMPONENTES---------------------------------------
+Instalar styled-components para adicionas estilo aos nossos componentes
+
+REACT-ICONS------------------------------------------
+Instalar react-icons para usar os icones diversos 
+
+ 
+ 
