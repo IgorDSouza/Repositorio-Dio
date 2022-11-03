@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom";
 import {Card} from "../../components/Card";
-import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
-import banner from '../../assets/banner.png';
 import { UserInfo } from "../../components/UserInfo";
-import {Container,Column,Title,TitleHighlight} from "./styles";
+import {Container,Column,TitleHighlight} from "./styles";
 
 
 const Feed = () =>{

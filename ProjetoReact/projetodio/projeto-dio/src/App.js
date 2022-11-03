@@ -11,6 +11,8 @@ import {Login} from './pages/login';// importando os componentes que criamos
 
 import {Feed} from './pages/feed';
 
+import {Teste} from './pages/index';
+
 function App() {
   return (
     <Router> 
@@ -18,6 +20,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/feed" element={<Feed/>} />
+          <Route path="/teste" element={<Teste/>} />
 
       </Routes>
     </Router>

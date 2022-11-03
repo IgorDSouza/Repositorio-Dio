@@ -26,5 +26,20 @@ Instalar styled-components para adicionas estilo aos nossos componentes
 REACT-ICONS------------------------------------------
 Instalar react-icons para usar os icones diversos 
 
- 
+--------------------------------------------------------
+HOOKS------------------------------------------------
+Permitem o uso de varios recursos através das funções e ajudam a organizar a logica ultilizada.
+
+---------------------useState---------------------------
+Ultilizado para lidar com estados de comportamento dentro do componente como alterações de texto dos inputs e etc.
+
+--------------------useEffect--------------------------
+Manipula o componente de acordo com o ciclo de vida dele. Gerenciar quando os componentes são renderizados.
+
+----------------------useMemo--------------------------
+Memoriza um valor para que não precise ser renderizado varias vezes, exigindo mais do sistema. Referenciar variaveis.
+
+---------------------useCallback-----------------------
+Memoriza um valor para que não precise ser renderizado varias vezes, exigindo mais do sistema. Referenciar funçoes.
+
  
