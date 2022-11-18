@@ -42,4 +42,14 @@ Memoriza um valor para que não precise ser renderizado varias vezes, exigindo m
 ---------------------useCallback-----------------------
 Memoriza um valor para que não precise ser renderizado varias vezes, exigindo mais do sistema. Referenciar funçoes.
 
- 
+REACT HOOK FORMS---------------------------------------
+ npm install react-hook-form 
+pacote para tratamento de formulários react.
+
+npm install @hookform/resolvers yup
+pacote para validação de dados do formulário
+
+AXIOS--------------------------------------------------
+npm install axios
+usado para requisições http
+
